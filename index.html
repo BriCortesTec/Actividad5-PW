@@ -36,7 +36,16 @@
         <header class="navbar">
             <button class="hamburger" id="btnHamburger">☰</button>
             <h1>Sistema de Gestión</h1>
-            <div class="usuario-navbar"><span id="usuarioNavbar">Usuario</span></div>
+            <div class="usuario-navbar">
+                <button id="btnUsuario" class="usuario-btn">
+                    <span id="usuarioNavbar">Usuario</span>
+                    <span>▾</span>
+                </button>
+
+                <div id="menuUsuario" class="menu-usuario">
+                    <button id="btnSalir">Salir del sistema</button>
+                </div>
+            </div>
         </header>
         <main class="contenido">
             <section class="bienvenida">

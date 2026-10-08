@@ -96,3 +96,27 @@ modalEdad.addEventListener("click", function (event) {
         modalEdad.classList.remove("mostrar");
     }
 });
+
+// Usuario del navbar - ochimPro
+const usuarioNavbar = document.getElementById("usuarioNavbar");
+const btnUsuario = document.getElementById("btnUsuario");
+const menuUsuario = document.getElementById("menuUsuario");
+const btnSalir = document.getElementById("btnSalir");
+
+const correoSesion = localStorage.getItem("correoUsuario");
+
+if (correoSesion) {
+    usuarioNavbar.textContent = correoSesion;
+}
+
+// Mostrar/ocultar menú del usuario
+btnUsuario.addEventListener("click", function () {
+    menuUsuario.classList.toggle("mostrar");
+});
+
+// Cerrar sesión
+btnSalir.addEventListener("click", function () {
+    localStorage.removeItem("correoUsuario");
+
+    window.location.href = "login.html";
+});
