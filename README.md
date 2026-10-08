@@ -97,7 +97,7 @@ Si algún dato es incorrecto, se muestra un mensaje de error y el usuario no pue
 Cuando los datos son válidos, el correo del usuario se guarda en el navegador para poder usarlo en la siguiente pantalla:
 
 ```js
-sessionStorage.setItem("usuario", correo);
+const correoSesion = localStorage.getItem("correoUsuario");
 ```
 
 ### Paso 4: Redirección
@@ -112,11 +112,11 @@ window.location.href = "index.html";
 
 # Cómo se pasa el nombre de usuario del login al navbar
 
-1. En `login.js` se guarda el correo en `sessionStorage` al validar el login.
+1. En `login.js` se guarda el correo en `localStorage` al validar el login.
 2. En `index.html`, al cargar la página, se lee ese valor:
 
 ```js
-const usuario = sessionStorage.getItem("usuario");
+const usuario = localStorage.getItem("correoUsuario");
 document.getElementById("nombreUsuario").textContent = usuario;
 ```
 
