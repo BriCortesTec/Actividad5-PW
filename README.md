@@ -157,22 +157,6 @@ Al capturar la edad del alumno, se muestra un modal que indica si es **mayor de 
 
 ---
 
-# Métodos principales
-
-| Función | Archivo | Descripción |
-|---|---|---|
-| `validarCorreo()` | utileria.js | Verifica que el correo tenga un formato válido. |
-| `validarPassword()` | utileria.js | Verifica que la contraseña cumpla los requisitos. |
-| `[iniciarSesion()]` | login.js | Valida los datos, guarda el usuario y redirige a index.html. |
-| `[mostrarUsuario()]` | login.js | Muestra el usuario guardado en el navbar. |
-| `[toggleSidebar()]` | login.js | Abre y cierra el sidebar. |
-| `[toggleSubmenu()]` | login.js | Despliega el submenú Captura. |
-| `[validarNumeroControl()]` | login.js | Valida que el número de control tenga 6 dígitos. |
-| `[mostrarModalEdad()]` | login.js | Indica si el alumno es mayor de edad. |
-| `[cerrarSesion()]` | login.js | Elimina la sesión y regresa al login. |
-
----
-
 # Proceso de creación
 
 ### 1. Login
