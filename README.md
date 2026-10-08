@@ -1,4 +1,4 @@
-# 💻 Actividad 5 - Proyecto de Login
+# Actividad 5 - Proyecto de Login
 
 ## Integrantes
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Descripción del proyecto
+## Descripción del proyecto
 
 El proyecto consiste en desarrollar un sistema web con un **login funcional** utilizando HTML, CSS y JavaScript.
 
