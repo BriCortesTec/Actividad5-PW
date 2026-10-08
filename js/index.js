@@ -66,41 +66,29 @@ formAlumno.addEventListener("submit", function (event) {
             "Selecciona la fecha de nacimiento.";
         return;
     }
-
     // Calcular edad usando utileria.js
     const edad = calcularEdad(fechaNacimiento);
-
     // Determinar mayoría de edad
     const mayorEdad = esMayorDeEdad(fechaNacimiento);
-
     const resultado = mayorEdad
         ? `${nombre} tiene ${edad} años y es mayor de edad.`
         : `${nombre} tiene ${edad} años y es menor de edad.`;
-
     document.getElementById("resultadoEdad").textContent = resultado;
-
     // Mostrar modal
     document.getElementById("modalEdad").classList.add("mostrar");
-
     mensaje.textContent = "";
-
     formAlumno.reset();
 });
-
-
 // Cerrar modal
 const cerrarModal = document.getElementById("cerrarModal");
 const btnAceptarModal = document.getElementById("btnAceptarModal");
 const modalEdad = document.getElementById("modalEdad");
-
 cerrarModal.addEventListener("click", function () {
     modalEdad.classList.remove("mostrar");
 });
-
 btnAceptarModal.addEventListener("click", function () {
     modalEdad.classList.remove("mostrar");
 });
-
 
 // Cerrar modal al hacer clic fuera
 modalEdad.addEventListener("click", function (event) {
@@ -108,4 +96,3 @@ modalEdad.addEventListener("click", function (event) {
         modalEdad.classList.remove("mostrar");
     }
 });
-```
