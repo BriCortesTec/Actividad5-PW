@@ -1,11 +1,93 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema - Actividad 5</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Mi Sistema</h2>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <button class="menu-btn" id="btnUsuarios">
+                        Usuarios
+                        <span>▾</span>
+                    </button>
+                    <ul class="submenu" id="submenuUsuarios">
+                        <li><a href="#captura">Captura</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="main-content" id="mainContent">
+        <header class="navbar">
+            <button class="hamburger" id="btnHamburger">☰</button>
+            <h1>Sistema de Gestión</h1>
+            <div class="usuario-navbar"><span id="usuarioNavbar">Usuario</span></div>
+        </header>
+        <main class="contenido">
+            <section class="bienvenida">
+                <h2>Bienvenido al sistema</h2>
+                <p>Selecciona una opción del menú lateral.</p>
+            </section>
+            <section id="captura" class="seccion">
+                <h2>Captura de usuario</h2>
+                <form id="formUsuario">
+                    <div class="campo">
+                        <label for="nombreUsuario">Nombre de usuario</label>
+                        <input type="text" id="nombreUsuario" required>
+                    </div>
+                    <div class="campo">
+                        <label for="correoUsuario">Correo electrónico</label>
+                        <input type="email" id="correoUsuario" required>
+                    </div>
+                    <div class="campo">
+                        <label for="passwordUsuario"> Contraseña</label>
+                        <input type="password" id="passwordUsuario" required>
+                    </div>
+                    <button type="submit" class="btn">Guardar usuario</button>
+                    <p id="mensajeUsuario"></p>
+                </form>
+            </section>
+            <section class="seccion">
+                <h2>Captura de alumno</h2>
+                <form id="formAlumno">
+                    <div class="campo">
+                        <label for="nombreAlumno">Nombre del alumno</label>
+                        <input type="text" id="nombreAlumno" required>
+                    </div>
+                    <div class="campo">
+                        <label for="numeroControl">Número de control</label>
+                        <input type="text" id="numeroControl" maxlength="6" inputmode="numeric" placeholder="6 dígitos" required >
+                    </div>
+                    <div class="campo">
+                        <label for="fechaNacimiento"> Fecha de nacimiento</label>
+                        <input  type="date"  id="fechaNacimiento"  required>
+                    </div>
+                    <button type="submit" class="btn"> Registrar alumno</button>
+                    <p id="mensajeAlumno"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+    <div class="modal" id="modalEdad">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" id="cerrarModal"> &times;</button>
+            <h2>Resultado de edad</h2>
+            <p id="resultadoEdad"></p>
+            <button type="button" class="btn" id="btnAceptarModal"> Aceptar</button>
+        </div>
+    </div>
+    <script src="js/utileria.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
+```
