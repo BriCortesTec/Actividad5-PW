@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <script>
+        const correoUsuario = localStorage.getItem("correoUsuario");
+
+        if (!correoUsuario) {
+            window.location.href = "login.html";
+        }
+    </script>
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h2>Mi Sistema</h2>
@@ -86,6 +93,5 @@
     </div>
     <script src="js/utileria.js"></script>
     <script src="js/index.js"></script>
-
 </body>
 </html>
