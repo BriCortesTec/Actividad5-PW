@@ -198,8 +198,9 @@ Se programó un modal que indica si el alumno es mayor de edad.
 
 | Integrante | Responsabilidades |
 |---|---|
-| López Cortés Hayley Brithany | [Ej. login, navbar con usuario, salir] |
-| Avendaño Chavez Nadya Yahuili | [Ej. sidebar, formularios, modal de edad] |
+| López Cortés Hayley Brithany | [ login, login.js, login.css] |
+| Avendaño Chavez Nadya Yahuili | [ index, index.js, index.css] |
+| Utilileria conjunta con López Cortés |
 
 ---
 
